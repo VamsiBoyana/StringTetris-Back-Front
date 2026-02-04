@@ -1,0 +1,17 @@
+@font-face {
+  font-family: 'Drag Racing';
+  src: url('./Drag Racing.woff2') format('woff2'),
+       url('./Drag Racing.woff') format('woff'),
+       url('./Drag Racing.ttf') format('truetype'),
+       url('./Drag Racing.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Techno Race Italic';
+  src: url('./TechnoRaceItalic-eZRWe.otf') format('opentype');
+  font-weight: normal;
+  font-style: italic;
+}

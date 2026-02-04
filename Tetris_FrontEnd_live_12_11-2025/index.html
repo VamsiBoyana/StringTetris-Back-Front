@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Metal+Mania&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="/src/assets/fonts/font.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover"
+    />
+    <title>Tetris</title>
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+ <script src="https://telegram.org/js/telegram-web-app.js?56"></script>
+
+
+
+
+<script type="text/javascript" src="https://cdn.tgads.space/assets/js/adexium-widget.min.js"></script>
+
+
+
+
+
+<!-- Google tag (gtag.js) --> 
+ <script async src="https://www.googletagmanager.com/gtag/js?id=G-K9GJH23MN3"></script> 
+ <script> 
+ window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'G-K9GJH23MN3'); 
+ </script>
+
+
+
+    <script>
+      // Initialize Telegram WebApp
+      let tg = window.Telegram?.WebApp;
+
+      // Function to handle WebApp initialization
+      function initializeWebApp() {
+        if (!tg) {
+          console.error("Telegram WebApp object not found");
+          return false;
+        }
+
+        try {
+          // Enable closing confirmation
+          tg.enableClosingConfirmation();
+
+          // Ready the WebApp
+          tg.ready();
+
+          // Set viewport settings
+          // tg.setViewportSettings({
+          //   is_expanded: true,
+          //   is_fullscreen: true
+          // });
+          tg.expand();
+
+          // Store WebApp info in localStorage for persistence
+          localStorage.setItem("tg_webapp_init", "true");
+
+          //   platform: tg.platform,
+          //   version: tg.version,
+          //   viewportHeight: tg.viewportHeight,
+          //   viewportStableHeight: tg.viewportStableHeight,
+          // });
+
+          return true;
+        } catch (error) {
+          console.error("Error initializing Telegram WebApp:", error);
+          return false;
+        }
+      }
+
+      // Initialize on load
+      window.addEventListener("load", function () {
+        const initialized = initializeWebApp();
+        if (!initialized) {
+          console.warn(
+            "Failed to initialize Telegram WebApp, using fallback mode"
+          );
+        }
+      });
+
+      // Re-initialize on visibility change (when user switches back to the app)
+      document.addEventListener("visibilitychange", function () {
+        if (document.visibilityState === "visible") {
+          initializeWebApp();
+        }
+      });
+    </script>
+
+
+
+
+
+
+    <!-- Ads scripts  -->
+    <!-- adSDK 6052371 by onclckvd  -->
+    <script src="https://js.onclckvd.com/in-stream-ad-admanager/tma.js"></script>
+
+    <!-- working ad -->
+    <script
+      src="//staurdoalse.net/vignette.min.js"
+      data-zone="8692316"
+      data-sdk="show_8692316"
+    ></script>
+
+
+
+    <!-- New ads  working -->
+     <script src="https://js.mbidadm.com/in-stream-ad-admanager/tma.js"></script>      
+
+        <script 
+          src="https://js.onclckmn.com/banner/oncbanner.m.js"
+          data-onclicka-banner="{6052371}"
+          async
+        ></script>
+
+        <script src="https://js.onclckvd.com/in-stream-ad-admanager/tma.js"></script>
+
+        <script src="https://sad.adsgram.ai/js/sad.min.js"></script>
+
+        <script src="https://static.sonartech.io/lib/1.0.0/sonar.js?appId=app_0df28c63"></script>
+
+        <!-- <script async src="https://partner.adextra.io/jt/8d7781b20f57265321eedcdd23289f5f934f517e.js"></script> -->
+         
+
+        <script
+        src="//munqu.com/sdk.js"
+        data-zone="9708597"
+        data-sdk="show_9708597"
+      ></script>
+       
+      <script type="text/javascript" src="https://cdn.tgads.space/assets/js/adexium-widget.min.js"></script>
+      <script async src="https://partner.adextra.io/jt/c4aa056680e227938c697d9fa46f3f7b2e50c605.js"></script> 
+
+      <!--new ad-->
+            <script
+        src="//munqu.com/sdk.js"
+        data-zone="10087360"
+        data-sdk="show_10087360"
+      ></script>
+
+    <!-- auto popup ads  working -->
+    <!-- <script
+        src="//staurdoalse.net/sdk.js"
+        data-zone="8844872"
+        data-sdk="show_8844872"
+        data-sdk-auto="1/1/60/30/0"
+      ></script>  -->
+  </head>
+  <body>
+    <div id="root"></div>
+    <div id="c4aa056680e227938c697d9fa46f3f7b2e50c605"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>

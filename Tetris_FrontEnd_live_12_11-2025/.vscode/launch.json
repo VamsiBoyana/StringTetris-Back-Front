@@ -1,0 +1,32 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    
+    {
+      "name": "Debug Tetris Game",
+      "type": "chrome",
+      "request": "launch",
+      "url": "http://localhost:5173", // or your dev server port
+      "webRoot": "${workspaceFolder}",
+      "sourceMapPathOverrides": {
+        "webpack:///./src/*": "${webRoot}/src/*"
+      },
+      "skipFiles": [
+        "<node_internals>/**"
+      ]
+    },
+    {
+      "name": "Debug Tetris Game (Firefox)",
+      "type": "firefox",
+      "request": "launch",
+      "url": "http://localhost:5173",
+      "webRoot": "${workspaceFolder}",
+      "pathMappings": [
+        {
+          "url": "webpack:///src",
+          "path": "${webRoot}/src"
+        }
+      ]
+    }
+  ]
+}

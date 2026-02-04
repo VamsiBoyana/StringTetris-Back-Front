@@ -1,0 +1,30 @@
+/* App.css */
+@keyframes parallax-slide-left {
+  from {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes parallax-slide-right {
+  from {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.parallax-slide-left {
+  animation: parallax-slide-left 0.5s ease-out forwards;
+}
+
+.parallax-slide-right {
+  animation: parallax-slide-right 0.5s ease-out forwards;
+}
